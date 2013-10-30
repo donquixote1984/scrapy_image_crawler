@@ -3,7 +3,7 @@ scrapy_image_crawler
 
 crawl image and monitor
 
-![Image text](https://github.com/donquixote1984/scrapy_image_crawler/blob/master/screenshot.png)
+![Image text](https://raw.github.com/donquixote1984/scrapy_image_crawler/master/screenshot.png)
 
 0. architect
 	. redis for the q
