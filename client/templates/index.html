@@ -1,0 +1,153 @@
+{% load staticfiles %}
+<! DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}" type="text/css"/>
+     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css"/>
+<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="{% static 'javascript/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/ichart.1.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/chart.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/index.new.js' %}"></script>
+    <script>
+    </script>
+	</head>
+	<body>
+      <nav id ="head">Spider Console</nav>
+      <div class="container">
+      <div class="row">
+        <div id = "spider-list" class="span2">
+            <div class="panel-header">Spiders 
+            </div>
+            <ul></ul>
+        </div>
+        <div id = "spider-monitor" class="span10">
+            <div class="spider-monitor-kpi">
+            <div class="panel-header"  style="padding-bottom:0px">KPI
+              <div class="panel_header_controls">
+                <ul id="crawl_control_list">
+                  <li>
+                    <i class='icon icon-refresh'></i>
+                  </li>
+                  <li>
+                    <i class='icon icon-repeat'></i>
+                  </li>
+                  <li>
+                    <i class='icon icon-step-forward'></i>
+                  </li>
+                  <li>
+                    <i class='icon icon-trash'></i>
+                  </li>
+                </ul>
+            </div>
+          </div>
+            <div id="spider-monitor-content" >
+                <div id="status-chart"><h2 style="text-align:center;margin:0">CLICK THE INSTANCE TO GET THE STATUS</h2></div>
+                
+                <div id="status-kpi">
+                    <div id="controls" class='kpi' style="width:100%">
+                                 <div id="test_container">
+                                    <div id="test" >
+                                        <div id="test-open">
+                                          
+                                      </div>
+                                    </div>
+                                      
+                                   <div id="test_control"></div> 
+                                </div>
+                                <div class="key_kpi_container">
+                                 <div class = "key_kpi">
+                                    <span class="title">Crawled :</span>
+                                    <span class="content" id = "crawled_key_kpi"></span>
+                                </div>
+                                <div class="key_kpi">
+                                    <span class="title">Data:</span>
+                                    <span class="content" id = "downloads_key_kpi"></span>
+                                </div>
+                                <div class="key_kpi">
+                                    <span class="title">Saved Images:</span>
+                                    <span class="content" id="saved_images_kpi"></span>
+                                </div>
+                              </div>
+                    </div>
+                   
+                  <div class="row">
+                    <div id="velocity_kpi" class="span3 kpi">
+                      <div class="kpi_container">
+                        <h4 class="kpi_title">Latest Available Velocity</h4>
+                              <div class="kpi_value"></div>
+                      </div>
+                    </div>
+
+                    <div id="download_kpi" class="span3 kpi">
+                      <div class="kpi_container">
+                        <h4 class="kpi_title">Download Velocity</h4>
+                            <div class="kpi_value"></div>
+                      </div>
+                    </div>
+                    <div id="upload_kpi" class="span3 kpi">
+                        <div class="kpi_container">
+                            <h4 class="kpi_title">Upload Velocity</h4>
+                            <div class="kpi_value"></div>
+                            </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="span3 kpi" id="start_time_kpi">
+                      <div class="kpi_container">
+                        <h4 class="kpi_title">Start time</h4>
+                        <div class="kpi_value"></div>
+                      </div>
+                    </div>
+                  <div class="span3 kpi" id="equeue_kpi">
+                    <div class="kpi_container">
+                      <h4 class="kpi_title">Enqueue Size</h4>
+                      <div class="kpi_value"></div>
+                    </div>
+                  </div>
+                  <div class="span3 kpi" id="dequeue_kpi">
+                    <div class="kpi_container">
+                      <h4 class="kpi_title">Dequeue Size</h4>
+                      <div class="kpi_value"></div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="span3 kpi" id="saved_pages_kpi">
+                        <div class="kpi_container">
+                            <h4 class="kpi_title">Saved Pages</h4>
+                        <div class="kpi_value"></div>                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+ 
+          <div class="spider-monitor-requests">
+            <div class="panel-header">REQUEST QUEUE</div>
+            <div id="requests_q">
+              <ul></ul>
+              <div class="pagination" page = "1">
+                  Views More ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="crawl_process_modal">
+    <div id="crawl_process">
+    <div class="progress progress-striped active">
+      <div class="bar" style="width:1%"></div>
+      </div>
+    </div>
+    <div>
+	</body>
+</html>

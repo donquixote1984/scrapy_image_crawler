@@ -1,10 +1,3 @@
-scrapy_image_crawler
-====================
-
-crawl image and monitor
-
-
-
 0. architect
 	. redis for the q
 	. scrapyd for the service deployment and management
@@ -74,6 +67,3 @@ crawl image and monitor
 	. implement the unavailble buttons in web console.
 	. add a input field in web console. use can input one start url and start the shit. do not needs special spiders, one spider with different start url.
 	. spider pause/continue, for now it is just start/stop
-
-
-

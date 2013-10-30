@@ -1,0 +1,5 @@
+[Fixed] page物理存储与数据库不一致
+[Fixed] image物理存储与数据库不一致, twisted 默认数据插入延迟导致
+[] head title meta得到数据为空
+[] What the fuck my sublime2 can not toggle the chinese input(JUST FINE).
+[Processing] Fix the chart display bug in the index page ->index.new.js

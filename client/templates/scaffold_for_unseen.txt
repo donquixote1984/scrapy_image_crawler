@@ -1,0 +1,31 @@
+<header/>
+	<controls hover:float>
+		<stop/>/<(re)start/>
+		<clear-Q/>
+		<persist-redis/>
+
+	</controls>
+	<portal>
+		<h1>A beatiful count</h1>
+		<portal1>For the crawl speed.  line chart</portal1>
+		<portal2>
+			--float:left
+			<portal3>
+				redis-status: 
+					q-request
+			</portal3>
+			<portal4>
+				mysql-status:
+					for the crawled image page/preview
+			</portal4>
+		</portal2>
+		<portal5>
+			<portal6>
+				crawler stats(ws)
+			</portal6>
+			<portal7>
+			 	A real canvas spider(just for fun of mine)
+			</portal7>
+		</portal5>
+	</portal>
+<footer/>

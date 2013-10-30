@@ -1,0 +1,9 @@
+[Done] page id 移到spider中添加
+[Done] 使用Redis替代数据库image去重,构建百万图片访问
+[Done]加入signal用于阻断新的request,和平结束
+[]add setup&installation script=======
+[Processing]IMPLEMENT the controls of spiders like pause, stop, continue , stop and something like this. now they are just skeleton.
+[Done] ADD a inc_stats() method in db.py so as to record db save counts.
+[Done] Add db saved images/pages count tracking.
+[Done] Add width, height,size column to image table, just for sql based search.
+[Done] Add image downloaded counter/total size item in spider stats

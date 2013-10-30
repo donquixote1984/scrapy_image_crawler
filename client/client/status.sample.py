@@ -1,0 +1,22 @@
+{
+    "log_count/DEBUG": 5323,
+    "log_count/INFO": 15109,
+    "downloader/response_count": 2628,
+    "downloader/response_status_count/200": 2607,
+    "response_received_count": 2607,
+    "request_depth_max": 2,
+    "downloader/response_bytes": 74107728,
+    "scheduler/dequeued/redis": 97,
+    "start_time": "2013-09-30 13:40:38",
+    "image_status_count/downloaded": 2546,
+    "scheduler/enqueued/redis": 2787,
+    "downloader/request_bytes": 706798,
+    "log_count/WARNING": 1776,
+    "log_count/ERROR": 1,
+    "downloader/request_method_count/GET": 2643,
+    "spider_exceptions/UnicodeEncodeError": 1,
+    "downloader/request_count": 2643,
+    "image_count": 2546,
+    "item_scraped_count": 44,
+    "downloader/response_status_count/302": 21
+}
